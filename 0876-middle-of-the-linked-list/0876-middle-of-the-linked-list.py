@@ -12,12 +12,8 @@ class Solution:
         while temp!=None:
             i+=1
             temp=temp.next
-        print(i)
-        if i%2==0:
-            mid=i//2+1
-        else:
-            mid=i//2+1
-        print(mid)
+        mid=i//2+1
+        
         j=1
         temp=head
         while j<mid:
