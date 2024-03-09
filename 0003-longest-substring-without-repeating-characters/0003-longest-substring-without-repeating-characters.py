@@ -18,6 +18,7 @@ class Solution:
                     
                     l=dict_indexes[s[i]]+1
                     dict_indexes[s[i]]=i
+                    maxer=max(maxer,i-l+1)
                     
         return maxer
 
