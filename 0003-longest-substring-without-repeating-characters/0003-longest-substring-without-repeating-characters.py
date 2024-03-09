@@ -12,16 +12,11 @@ class Solution:
                 dict1[s[r]]=r
             elif s[r] in dict1 and dict1[s[r]]>=l:
                 l=dict1[s[r]]+1
-                len1=r-l+1
-                dict1[s[r]]=r
-                max_len=max(max_len,len1)
+                max_len=max(max_len,r-l+1)
+                dict1[s[r]]=r    
             else:
                 dict1[s[r]]=r
                 max_len=max(max_len,r-l+1)
-            # print(dict1)
-            # print(len1)
-            # print(r)
-            # print(l)
         return max_len
             
             
