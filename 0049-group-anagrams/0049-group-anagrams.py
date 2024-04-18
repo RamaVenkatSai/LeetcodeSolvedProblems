@@ -8,8 +8,3 @@ class Solution:
             ll[str(l)].append(i)
             
         return list(ll.values())
-            
-            
-        
-        
-        
